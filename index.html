@@ -6,10 +6,9 @@
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600' rel='stylesheet' type='text/css'> -->
-
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600' rel='stylesheet' type='text/css'> -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,30 +24,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-    <!-- .top-nav
-        logo
-        navigation
-            home: > в самый верх перемещает управление
-            about: > about, get in touch blocks, href="#contact"
-            portfolio: > blocks like here - http://shtheme.com/demosd/dotfolio/#portfolio
-            contact: > href to contact block with working form with several cheks
-
-        typed.js
-        parallax
-
-    .header
-        .profile
-
-    .main
-        .BLOCKS.portfolio
-
-    .footer
-        idioms
-        copy -->
-
-
-    <div class="wrapper">
+    <div id="home" class="wrapper">
 
       <div class="pl">
           <div class="round1"></div>
@@ -67,10 +43,10 @@
             <nav class="main-nav  clearfix">
 
               <ul class="main-nav-bar">
-                <li class="animated  fadeInUp  item1"><a href="#">Home</a></li>
-                <li class="animated  fadeInUp  item2"><a href="#">About</a></li>
-                <li class="animated  fadeInUp  item3"><a href="#">Projects</a></li>
-                <li class="animated  fadeInUp  item4"><a href="#">Contact</a></li>
+                <li class="animated  fadeInUp  item1"><a href="#home">Home</a></li>
+                <li class="animated  fadeInUp  item2"><a href="#about">About</a></li>
+                <li class="animated  fadeInUp  item3"><a href="#projects">Projects</a></li>
+                <li class="animated  fadeInUp  item4"><a href="#contacts">Contact</a></li>
               </ul>
 
               <!-- <ul class="social-header  clearfix">    НЕ ЗАБУДЬ ВЫЧИСТИТЬ СТИЛИ ПОСЛЕ ЭТОЙ ШТУКИ
@@ -108,8 +84,6 @@
 </div>
 <!-- / Typer.js -->
 
-
-              HEADER::PROFILE
             </div>
           </div>
         </header>
@@ -154,7 +128,7 @@
 
       <!-- Main Content
       ================================================== -->
-      <div class="main">
+      <div id="projects" class="main">
 
 
 <div class="sec-title">
@@ -163,9 +137,6 @@
 </div>
 
 
-  Latest projects
-  awesome portfolio
-  line ----------
 
 
         <div class="wrap">
@@ -387,6 +358,122 @@
               </div>
             </div>
 
+            <div class="element  element-box  portfolio-item10">
+              <div id="contacts" class="anchor"></div>
+              <div class="element-wrapper">
+                <div class="portfolio-item">
+<!-- 09 :: get in touch -->
+                    <!-- portfolio-description -->
+                    <div class="portfolio-item-content">
+                      <div class="element-box-title">
+                        <span>Get in Touch</span>
+                      </div>
+                      <div class="contact-info-box">
+                        <div class="contact-info-ico">
+                          <img src="img/ico5.svg" alt="">
+                          <img src="img/ico4.svg" alt="">
+                        </div>
+                        <h3 class="contact-info-title">Phone:</h3>
+                        <p><strike>+380 093 130 24 71</strike></p>
+                        <h3 class="contact-info-title">Email:</h3>
+                        <p>offers16@mail.ua</p>
+                        <h3 class="contact-info-title">Address:</h3>
+                        <p>The Dniprovskyi District, <span>Kiev - UA</span></p>
+                      </div>
+                    </div>
+
+                    <!-- /portfolio-description -->
+                </div>
+              </div>
+            </div>
+
+            <div class="element  element-box  portfolio-item11">
+              <div id="about" class="anchor"></div>
+              <div class="element-wrapper">
+                <div class="portfolio-item">
+<!-- 09 :: intertelecom.ua -->
+                    <!-- portfolio-description -->
+                    <div class="portfolio-item-content">
+                      <div class="element-box-title">
+                        <span>Services</span>
+                      </div>
+                      <div class="contact-info-box">
+                        <div class="contact-info-ico">
+                          <img src="img/ico3.svg" alt="">
+                        </div>
+                        <h2 class="service-title">Web Development</h2>
+                        <div class="service-description">
+                          <p>My passion is delivering efficient, robust code that helps people meet their goals.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element  element-box  portfolio-item12">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-item">
+                  <div class="map">
+                    <div id="map">
+                      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script><div class="map-cover"><div id="gmap_canvas" class="map-image"></div></div><script type="text/javascript">
+
+
+                        (function () {
+                              var map = new google.maps.Map(document.getElementById('gmap_canvas'),     // choose your map block
+                               {
+                                zoom: 12,
+                                center: {lat: 50.4477, lng: 30.58829},             // specify coordinates
+                                scrollwheel: false,
+                                mapTypeControl: false,
+                                panControl: false,
+                                disableDefaultUI: false,
+                                mapTypeControlOptions: {
+                                   style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                                   position: google.maps.ControlPosition.RIGHT_BOTTOM
+                                },
+                                zoomControl: true,
+                                zoomControlOptions: {
+                                   position: google.maps.ControlPosition.LEFT_CENTER
+                                },
+                                scaleControl: true,
+                                streetViewControl: false
+                              });
+
+                              var image = 'img/marker.png'; // marker pic here
+                              var beachMarker = new google.maps.Marker({
+                                    position:{ lat: 50.4397, lng: 30.63309},      // specify coordinates
+                                    map: map,
+                                    icon: image
+                                    });
+
+                                    // Define the LatLng coordinates for the polygon's path.
+                                    var triangleCoords = [
+                                      {lat: 50.453388, lng: 30.586832},
+                                      {lat: 50.417, lng: 30.592},
+                                      {lat: 50.432, lng: 30.649},
+                                      {lat: 50.474700, lng: 30.658485}
+                                    ];
+
+                                    // Construct the polygon.
+                                    var area = new google.maps.Polygon({
+                                      paths: triangleCoords,
+                                      strokeColor: '#EF765F',
+                                      strokeOpacity: 0.8,
+                                      strokeWeight: 2,
+                                      fillColor: '#EF765F',
+                                      fillOpacity: 0.35
+                                    });
+                                    area.setMap(map);
+                        })();
+
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
 
 
@@ -399,7 +486,7 @@
 
 
       <footer class="footer">
-        <a id="back-to-top" href="#">
+        <a id="back-to-top" href="javascript:void(0);">
           <div class="back-to-top"></div>
         </a>
         <div class="footer-line"></div>

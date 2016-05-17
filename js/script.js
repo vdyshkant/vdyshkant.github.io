@@ -24,7 +24,22 @@ $(window).load(function(){
 
 /* eof progress preloader */
 
+/* smooth menu */
 
+// Smooth scrolling from menu
+
+$(document).ready(function(){
+
+	$(".headhesive .main-nav-bar a[href^='#']").click(function(){
+			$("html, body").animate({
+					scrollTop: $( $.attr(this, "href") ).offset().top
+			}, 500);
+			return false;
+	});
+
+});
+
+/* eof smooth menu */
 
 // back to top
 $(document).ready(function(){
@@ -125,3 +140,40 @@ $(document).ready(function(){
 	});
 });
 // EOF burger behave
+
+
+//Services-hover
+var thisBox =  null;
+$('.portfolio-item-content').on('mouseenter', function() {
+
+    thisBox =  $(this);
+    thisBox.addClass('element-box-hover1');
+
+    var intervalBox1 = setTimeout(function(){
+      thisBox.addClass('element-box-hover2');
+      //clearInterval(intervalBox1);
+    }, 400);
+    var intervalBox2 = setTimeout(function(){
+      thisBox.find('.element-box-ico').addClass('element-box-ico-hover');
+      //clearInterval(intervalBox2);
+    }, 800);
+    return false;
+});
+
+$('.portfolio-item-content').on('mouseleave', function() {
+    thisBox =  $(this);
+    $('.element-box-ico').removeClass('element-box-ico-hover');
+    var intervalBox3 = setTimeout(function(){
+      $('.portfolio-item-content').removeClass('element-box-hover2');
+      //clearInterval(intervalBox3);
+    }, 400);
+
+    var intervalBox4 =setTimeout(function(){
+      $('.portfolio-item-content').removeClass('element-box-hover1');
+      $('.element-box-ico').removeClass('element-box-ico-hover');
+      //clearInterval(intervalBox4);
+    }, 800);
+    return false;
+});
+
+// EOF Services-hover
