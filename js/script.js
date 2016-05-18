@@ -1,7 +1,5 @@
 
 /* progress loader */
-
-
 $(document).ready(function(){
 	NProgress.start();
 });
@@ -21,13 +19,11 @@ $(window).load(function(){
 		NProgress.done();
 	}, 1500);
 });
+/* /progress preloader */
 
-/* eof progress preloader */
 
-/* smooth menu */
 
-// Smooth scrolling from menu
-
+/* smooth scrolling from nav menu */
 $(document).ready(function(){
 
 	$(".headhesive .main-nav-bar a[href^='#']").click(function(){
@@ -38,10 +34,11 @@ $(document).ready(function(){
 	});
 
 });
+/* /smooth scrolling from nav menu */
 
-/* eof smooth menu */
 
-// back to top
+
+/* back to top */
 $(document).ready(function(){
 
     $("#back-to-top").click(function(){
@@ -49,7 +46,8 @@ $(document).ready(function(){
         return false;
     });
 });
-// eof back to top
+/* /back to top */
+
 
 
 // typed.js
@@ -69,65 +67,41 @@ function typed () {
     };
 }
 
-// instance of fuction while Document ready event
+	// instance of fuction while Document ready event
 jQuery(document).on('ready', function () {
 	(function ($) {
 		typed();
 	})(jQuery);
 });
-// EOF typed.js
+// /typed.js
 
-// Create a new instance of Headhesive
-// Options
+
+
+// Headhesive
+	// Options
 var options = {
   offset: 1
 }
 
-// Create a new instance of Headhesive.js and pass in some options
+	// Create a new instance of Headhesive.js and pass in some options
 var header = new Headhesive('.top-nav', options);
+// /Headhesive
 
 
-// EOF headsive.js
 
-// burger animation itself
-//
-// var toggled = 0;
-//
-// $('.burger-menu').click(function(){
-//   if(toggled == 0){
-//   $('.burg3').stop().transition({rotate: "45", "margin-top": "13px"});
-//   $('.burg2').stop().transition({opacity: "0"}, "fast");
-//   $('.burg1').stop().transition({rotate: "-45", "margin-top": "13px"});
-//     toggled++;
-//   }
-//   else{
-//   $('.burg3').stop().transition({rotate: "+=135", "margin-top": "8px"});
-//   $('.burg2').transition({opacity: "1"}, "fast");
-//   $('.burg1').stop().transition({rotate: "-=135", "margin-top": "18px"});
-//   toggled--;
-//   }
-// });
+// burger
 
-$("a.burger").click(function(){
-  $(this).toggleClass("selected");
+	// burger animation itself:
+$("a.burger-link").click(function(e){
+	e.preventDefault();
+  $(this).toggleClass("burger-active");
 });
-// EOF  burger animation itself
 
 
-
-
-// burger behave
-
-
-
-// добавляем класс с анимацией по клику на бургер, а сами стили выносим из js into css
-// одновременно по клику на бургер вешаем классы на всплывающее меню
-// при отбратном клике по бургеру всё предыдущее отменяется.
-// opacity для nav блока меняем динамически и display none на block
-
+	// main-nav-bar appearence:
 $(document).ready(function(){
 	var open = false;
-	jQuery('a.burger').on('click', function() {
+	jQuery('a.burger-link').on('click', function() {
 			// jQuery(this).find(".burger-menu").toggleClass("main-nav-bar-active");
 			if (open == false) {
 					jQuery('.main-nav-bar').fadeIn(300);
@@ -136,13 +110,28 @@ $(document).ready(function(){
 					jQuery('.main-nav-bar').fadeOut(300);
 					open = false;
 			}
-			stag_wpml_widget_position();
 	});
+
+	// отлов событя размер окна
+	window.addEventListener("resize", function(){
+		// при ширине до 700px делаем следующее:
+		if (window.matchMedia("(max-width: 700px)").matches) {
+			jQuery('.toggle-handy').on('click', function() {
+					if (open == true) {
+							jQuery('.main-nav-bar').fadeOut(300);
+							open = false;
+							$("a.burger-link").removeClass("burger-active");
+					}
+			});
+		}
+	})
+
 });
-// EOF burger behave
+
+// /burger
 
 
-//Services-hover
+// services-hover
 var thisBox =  null;
 $('.portfolio-item-content').on('mouseenter', function() {
 
@@ -152,28 +141,22 @@ $('.portfolio-item-content').on('mouseenter', function() {
     var intervalBox1 = setTimeout(function(){
       thisBox.addClass('element-box-hover2');
       //clearInterval(intervalBox1);
-    }, 400);
-    var intervalBox2 = setTimeout(function(){
-      thisBox.find('.element-box-ico').addClass('element-box-ico-hover');
-      //clearInterval(intervalBox2);
-    }, 800);
+    }, 300);
     return false;
 });
 
 $('.portfolio-item-content').on('mouseleave', function() {
     thisBox =  $(this);
-    $('.element-box-ico').removeClass('element-box-ico-hover');
-    var intervalBox3 = setTimeout(function(){
+    var intervalBox2 = setTimeout(function(){
       $('.portfolio-item-content').removeClass('element-box-hover2');
       //clearInterval(intervalBox3);
-    }, 400);
+    }, 300);
 
-    var intervalBox4 =setTimeout(function(){
+    var intervalBox3 =setTimeout(function(){
       $('.portfolio-item-content').removeClass('element-box-hover1');
-      $('.element-box-ico').removeClass('element-box-ico-hover');
       //clearInterval(intervalBox4);
-    }, 800);
+    }, 600);
     return false;
 });
 
-// EOF Services-hover
+// /services-hover

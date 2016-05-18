@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600' rel='stylesheet' type='text/css'> -->
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +15,6 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nprogress.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
@@ -26,128 +24,108 @@
 
     <div id="home" class="wrapper">
 
-      <div class="pl">
-          <div class="round1"></div>
-          <div class="pl-left"></div>
-          <div class="pl-right"></div>
-      </div>
-
-
 
       <div class="top-nav" id="header">
         <div class="wrap clearfix">
+
           <div class="left">
             <div class="logo">Portfolio</div>
           </div>
+
           <div class="right">
             <nav class="main-nav  clearfix">
-
               <ul class="main-nav-bar">
-                <li class="animated  fadeInUp  item1"><a href="#home">Home</a></li>
-                <li class="animated  fadeInUp  item2"><a href="#about">About</a></li>
-                <li class="animated  fadeInUp  item3"><a href="#projects">Projects</a></li>
-                <li class="animated  fadeInUp  item4"><a href="#contacts">Contact</a></li>
+                <li class="animated  fade-handy  fadeInUp  item1"><a class="toggle-handy" href="#home">Home</a></li>
+                <li class="animated  fade-handy  fadeInUp  item2"><a class="toggle-handy" href="#about">About</a></li>
+                <li class="animated  fade-handy  fadeInUp  item3"><a class="toggle-handy" href="#projects">Projects</a></li>
+                <li class="animated  fade-handy  fadeInUp  item4"><a class="toggle-handy" href="#contacts">Contact</a></li>
               </ul>
-
-              <!-- <ul class="social-header  clearfix">    НЕ ЗАБУДЬ ВЫЧИСТИТЬ СТИЛИ ПОСЛЕ ЭТОЙ ШТУКИ
-                <li><a class="social-github" href="#"></a></li>
-                <li><a class="social-email" href="#"></a></li>
-              </ul> -->
-
               <div class="burger-menu">
-                  <a class="burger burger3" href="javascript:void(0)"><span></span></a>
+                  <a class="burger-link" href="#"><span></span></a>
               </div>
-
             </nav>
           </div>
+
         </div>
       </div>
 
 
 
-        <header class="header">
-          <div class="wrap">
-            <div class="profile">
-
-<!-- Typer.js -->
-<div class="title  out  fade">I'm
-            <div class="type-wrap">
-              <div class="typed-strings">
-                <p>a Software Engineer</p>
-                <p>Front-end Developer</p>
-                <p>Trusted</p>
-                <p>RELIABLE</p>
+      <header class="header">
+        <div class="wrap">
+          <div class="profile">
+            <div class="title  out  fade">I'm
+              <div class="type-wrap">
+                <div class="typed-strings">
+                  <p>a Software Engineer</p>
+                  <p>Front-end Developer</p>
+                  <p>Trusted</p>
+                  <p>RELIABLE</p>
+                </div>
+                <span class="typed"></span>
+                <span class="typed-cursor"></span>
               </div>
-              <span class="typed"></span>
-              <span class="typed-cursor"></span>
-            </div>
-</div>
-<!-- / Typer.js -->
-
-            </div>
-          </div>
-        </header>
-
-        <div class="desktop">
-          <div class="desktop-wrapper">
-            <div class="desktop-img">
-              <!-- drops -->
-              <img src="https://stag-cdn1.deliciousthemes.com/stag/wp-content/uploads/revslider/stag-slider/stag-slider-image-1920x10801.jpg" alt="" width="1920" height="1080" data-ww="['1920px','1920px','1920px','1920px']" data-hh="['1080px','1080px','1080px','1080px']" data-lazyload="https://stag-cdn1.deliciousthemes.com/stag/wp-content/uploads/revslider/stag-slider/stag-slider-image-1920x10801.jpg" data-no-retina="" style="/* width: 1920px; *//* height: 1080px; */">
-              <div class="drops  out  fade">
-                <div class="tp-item tp-item1">
-                  <div class="tp-wrap">
-                    <div class="tp-mask"></div>
-                    <div class="tp-caption">The Creativity Booster</div>
-                  </div>
-                </div>
-                <div class="tp-item tp-item2">
-                  <div class="tp-wrap">
-                    <div class="tp-mask"></div>
-                    <div class="tp-caption">Always Take Notes</div>
-                  </div>
-                </div>
-                <div class="tp-item tp-item3">
-                  <div class="tp-wrap">
-                    <div class="tp-mask"></div>
-                    <div class="tp-caption">Where Ideas Come To Life</div>
-                  </div>
-                </div>
-                <div class="tp-item tp-item4">
-                  <div class="tp-wrap">
-                    <div class="tp-mask"></div>
-                    <div class="tp-caption">Never Stop Learning!</div>
-                  </div>
-                </div>
-              </div>
-              <!-- / drops -->
             </div>
           </div>
         </div>
+      </header>
 
 
 
-      <!-- Main Content
-      ================================================== -->
-      <div id="projects" class="main">
+      <div class="desktop">
+        <div class="desktop-wrapper">
+            <img src="img/desktop-1920x1080.jpg" alt="" width="1920" height="1080">
+
+            <!-- drops -->
+            <div class="drops  out  fade">
+              <div class="drops-item  drops-item1">
+                <div class="drops-wrap">
+                  <div class="drops-mask"></div>
+                  <div class="drops-caption">The Creativity Booster</div>
+                </div>
+              </div>
+              <div class="drops-item  drops-item2">
+                <div class="drops-wrap">
+                  <div class="drops-mask"></div>
+                  <div class="drops-caption">Always Take Notes</div>
+                </div>
+              </div>
+              <div class="drops-item  drops-item3">
+                <div class="drops-wrap">
+                  <div class="drops-mask"></div>
+                  <div class="drops-caption">Where Ideas Come To Life</div>
+                </div>
+              </div>
+              <div class="drops-item  drops-item4">
+                <div class="drops-wrap">
+                  <div class="drops-mask"></div>
+                  <div class="drops-caption">Never Stop Learning!</div>
+                </div>
+              </div>
+            </div>
+            <!-- /drops -->
+        </div>
+      </div>
 
 
-<div class="sec-title">
-  <h2>Latest Projects</h2>
-  <span>Awesome portfolio</span>
-</div>
 
+      <div class="main">
+        <div id="projects" class="anchor"></div>
 
+        <div class="sec-title">
+          <h2>Latest Projects</h2>
+          <span>Awesome portfolio</span>
+        </div>
 
 
         <div class="wrap">
-          <div class="portfolio">
+          <div class="portfolio  clearfix">
 
-            <div class="element  portfolio-item1">               <!--    // w, poa, left-top / p3px -->
-              <div class="portfolio-wrapper">                    <!--    // min-height, por -->
-                <div class="portfolio-item">                     <!--    // margin, w100%, h100%, opacity, transition-transform -->
-                  <a class="portfolio-item-link" href="http://dolce-gusto.ua" target="_blank">   <!--    // cursor, transition, bgi, bgsCover, tac, c, poa -->
-<!-- 01 :: dolce-gusto.ua -->
-                    <!-- portfolio-description -->
+            <div class="element  portfolio-item1"><!-- dolce-gusto.ua -->
+              <div class="portfolio-wrapper">
+                <div class="portfolio-item">
+                  <a class="portfolio-item-link" href="http://dolce-gusto.ua" target="_blank">
+
                     <div class="portfolio-item-content"></div>
                     <div class="portfolio-description-wrapper">
                       <div class="icon">
@@ -155,23 +133,21 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
                         </svg>
                       </div>
-
                       <div class="portfolio-description  caption">
                         <h3>HTML5, CSS3, jQuery</h3>
                       </div>
                     </div>
-                    <!-- /portfolio-description -->
+
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item2">
+            <div class="element  portfolio-item2"><!-- masterpapers.com -->
               <div class="portfolio-wrapper">
                 <div class="portfolio-item">
                   <a class="portfolio-item-link" href="http://masterpapers.com" target="_blank">
-<!-- 02 :: masterpapers.com -->
-                    <!-- portfolio-description -->
+
                     <div class="portfolio-item-content"></div>
                     <div class="portfolio-description-wrapper">
                       <div class="icon">
@@ -179,23 +155,21 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
                         </svg>
                       </div>
-
                       <div class="portfolio-description  caption">
                         <h3>HTML5, CSS3, PHP, jQuery, Animation, Ecommerce</h3>
                       </div>
                     </div>
-                    <!-- /portfolio-description -->
+
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item3">
+            <div class="element  portfolio-item3"><!-- mcFOXY -->
               <div class="portfolio-wrapper">
                 <div class="portfolio-item">
                   <a class="portfolio-item-link" href="http://mcfoxy.ua" target="_blank">
-<!-- 03 :: mcFOXY -->
-                    <!-- portfolio-description -->
+
                     <div class="portfolio-item-content"></div>
                     <div class="portfolio-description-wrapper">
                       <div class="icon">
@@ -203,23 +177,21 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
                         </svg>
                       </div>
-
                       <div class="portfolio-description  caption">
                         <h3>HTML, CSS, jQuery</h3>
                       </div>
                     </div>
-                    <!-- /portfolio-description -->
+
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item4">
+            <div class="element  portfolio-item4"><!-- ringoo -->
               <div class="portfolio-wrapper">
                 <div class="portfolio-item">
                   <a class="portfolio-item-link" href="http://ringoo.ua" target="_blank">
-<!-- 04 :: ringoo -->
-                    <!-- portfolio-description -->
+
                     <div class="portfolio-item-content"></div>
                     <div class="portfolio-description-wrapper">
                       <div class="icon">
@@ -227,47 +199,67 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
                         </svg>
                       </div>
-
                       <div class="portfolio-description  caption">
                         <h3>HTML5, CSS3, jQuery</h3>
                       </div>
                     </div>
-                    <!-- /portfolio-description -->
+
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item5">
-              <div class="portfolio-wrapper">
-                <div class="portfolio-item">
-                  <a class="portfolio-item-link" href="http://club.nutricia.ua" target="_blank">
-<!-- 05 :: NUTRICIAclub -->
-                    <!-- portfolio-description -->
-                    <div class="portfolio-item-content"></div>
-                    <div class="portfolio-description-wrapper">
-                      <div class="icon">
-                        <svg class="icon-link-svg">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
-                        </svg>
+            <div class="portfolio-column"><!-- NUTRICIAclub  &&  nutrilon -->
+              <div class="element  portfolio-item5"><!-- NUTRICIAclub -->
+                <div class="portfolio-wrapper">
+                  <div class="portfolio-item">
+                    <a class="portfolio-item-link" href="http://club.nutricia.ua" target="_blank">
+
+                      <div class="portfolio-item-content"></div>
+                      <div class="portfolio-description-wrapper">
+                        <div class="icon">
+                          <svg class="icon-link-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
+                          </svg>
+                        </div>
+                        <div class="portfolio-description  caption">
+                          <h3>HTML5, CSS3, PHP, jQuery, JS, Yii</h3>
+                        </div>
                       </div>
 
-                      <div class="portfolio-description  caption">
-                        <h3>HTML5, CSS3, PHP, jQuery, JS, Yii</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="element  portfolio-item8"><!-- pronutrilon.com -->
+                <div class="portfolio-wrapper">
+                  <div class="portfolio-item">
+                    <a class="portfolio-item-link" href="http://pronutrilon.com" target="_blank">
+
+                      <div class="portfolio-item-content"></div>
+                      <div class="portfolio-description-wrapper">
+                        <div class="icon">
+                          <svg class="icon-link-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
+                          </svg>
+                        </div>
+                        <div class="portfolio-description  caption">
+                          <h3>HTML5, CSS3, Yii</h3>
+                        </div>
                       </div>
-                    </div>
-                    <!-- /portfolio-description -->
-                  </a>
+
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item6">
+            <div class="element  portfolio-item6"><!-- rastishka.ua -->
               <div class="portfolio-wrapper">
                 <div class="portfolio-item">
                   <a class="portfolio-item-link" href="http://rastishka.ua" target="_blank">
-<!-- 06 :: rastishka.ua -->
-                    <!-- portfolio-description -->
+
                     <div class="portfolio-item-content"></div>
                     <div class="portfolio-description-wrapper">
                       <div class="icon">
@@ -275,71 +267,67 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
                         </svg>
                       </div>
-
                       <div class="portfolio-description  caption">
                         <h3>HTML5, CSS3, Yii</h3>
                       </div>
                     </div>
-                    <!-- /portfolio-description -->
+
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item7">
-              <div class="portfolio-wrapper">
-                <div class="portfolio-item">
-                  <a class="portfolio-item-link" href="http://github.io" target="_blank">
-<!-- 07 :: PINK -->
-                    <!-- portfolio-description -->
-                    <div class="portfolio-item-content"></div>
-                    <div class="portfolio-description-wrapper">
-                      <div class="icon">
-                        <svg class="icon-link-svg">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
-                        </svg>
+            <div class="portfolio-column"><!-- PINK  &&  about my services -->
+              <div class="element  portfolio-item7"><!-- PINK -->
+                <div class="portfolio-wrapper">
+                  <div class="portfolio-item">
+                    <a class="portfolio-item-link" href="http://github.io" target="_blank">
+
+                      <div class="portfolio-item-content"></div>
+                      <div class="portfolio-description-wrapper">
+                        <div class="icon">
+                          <svg class="icon-link-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
+                          </svg>
+                        </div>
+                        <div class="portfolio-description  caption">
+                          <h3>HTML5, CSS3, Responsive, jQuery</h3>
+                        </div>
                       </div>
 
-                      <div class="portfolio-description  caption">
-                        <h3>HTML5, CSS3, Responsive, jQuery</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="element  element-box  portfolio-item11"><!-- about my services -->
+                <div class="element-wrapper">
+                  <div class="portfolio-item">
+                      <div id="about" class="anchor"></div>
+                      <div class="portfolio-item-content">
+                        <div class="element-box-title">
+                          <span>About my services</span>
+                        </div>
+                        <div class="contact-info-box">
+                          <div class="contact-info-ico">
+                            <img src="img/ico3.svg" alt="">
+                          </div>
+                          <h2 class="service-title">Web Development</h2>
+                          <div class="service-description">
+                            <p>My passion is delivering efficient, robust code that helps people meet their goals.</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <!-- /portfolio-description -->
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="element  portfolio-item8">
-              <div class="portfolio-wrapper">
-                <div class="portfolio-item">
-                  <a class="portfolio-item-link" href="http://pronutrilon.com" target="_blank">
-<!-- 0 :: pronutrilon.com -->
-                    <!-- portfolio-description -->
-                    <div class="portfolio-item-content"></div>
-                    <div class="portfolio-description-wrapper">
-                      <div class="icon">
-                        <svg class="icon-link-svg">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
-                        </svg>
-                      </div>
-
-                      <div class="portfolio-description  caption">
-                        <h3>HTML5, CSS3, Yii</h3>
-                      </div>
-                    </div>
-                    <!-- /portfolio-description -->
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="element  portfolio-item9">
+            <div class="element  portfolio-item9"><!-- intertelecom.ua -->
               <div class="portfolio-wrapper">
                 <div class="portfolio-item">
                   <a class="portfolio-item-link" href="http://intertelecom.ua" target="_blank">
-<!-- 09 :: intertelecom.ua -->
-                    <!-- portfolio-description -->
+
                     <div class="portfolio-item-content"></div>
                     <div class="portfolio-description-wrapper">
                       <div class="icon">
@@ -347,23 +335,21 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/link.svg#icon-link"></use>
                         </svg>
                       </div>
-
                       <div class="portfolio-description  caption">
                         <h3>HTML5, CSS3, jQuery</h3>
                       </div>
                     </div>
-                    <!-- /portfolio-description -->
+
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="element  element-box  portfolio-item10">
-              <div id="contacts" class="anchor"></div>
+            <div class="element  element-box  portfolio-item10"><!-- get in touch -->
               <div class="element-wrapper">
                 <div class="portfolio-item">
-<!-- 09 :: get in touch -->
-                    <!-- portfolio-description -->
+                    <div id="contacts" class="anchor"></div>
+
                     <div class="portfolio-item-content">
                       <div class="element-box-title">
                         <span>Get in Touch</span>
@@ -373,57 +359,37 @@
                           <img src="img/ico5.svg" alt="">
                           <img src="img/ico4.svg" alt="">
                         </div>
-                        <h3 class="contact-info-title">Phone:</h3>
-                        <p><strike>+380 093 130 24 71</strike></p>
                         <h3 class="contact-info-title">Email:</h3>
-                        <p>offers16@mail.ua</p>
-                        <h3 class="contact-info-title">Address:</h3>
-                        <p>The Dniprovskyi District, <span>Kiev - UA</span></p>
+                        <p>crunch-dev@mail.ua</p>
+                        <h3 class="contact-info-title">Skype:</h3>
+                        <p>Uspeh-garant1</p>
+                        <div class="tablet-desktop">
+                          <h3 class="contact-info-title">Location:</h3>
+                          <p>Kiev - <span>Ukraine</span></p>
+                        </div>
                       </div>
                     </div>
 
-                    <!-- /portfolio-description -->
                 </div>
               </div>
             </div>
 
-            <div class="element  element-box  portfolio-item11">
-              <div id="about" class="anchor"></div>
-              <div class="element-wrapper">
-                <div class="portfolio-item">
-<!-- 09 :: intertelecom.ua -->
-                    <!-- portfolio-description -->
-                    <div class="portfolio-item-content">
-                      <div class="element-box-title">
-                        <span>Services</span>
-                      </div>
-                      <div class="contact-info-box">
-                        <div class="contact-info-ico">
-                          <img src="img/ico3.svg" alt="">
-                        </div>
-                        <h2 class="service-title">Web Development</h2>
-                        <div class="service-description">
-                          <p>My passion is delivering efficient, robust code that helps people meet their goals.</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="element  element-box  portfolio-item12">
+            <div class="element  element-box  portfolio-item12"><!-- map -->
               <div class="portfolio-wrapper">
                 <div class="portfolio-item">
-                  <div class="map">
-                    <div id="map">
-                      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script><div class="map-cover"><div id="gmap_canvas" class="map-image"></div></div><script type="text/javascript">
+                      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
+                      <div class="map-cover">
+                        <div id="gmap_canvas" class="map-image"></div>
+                      </div>
+
+                      <script type="text/javascript">
 
                         (function () {
                               var map = new google.maps.Map(document.getElementById('gmap_canvas'),     // choose your map block
                                {
                                 zoom: 12,
-                                center: {lat: 50.4477, lng: 30.58829},             // specify coordinates
+                                center: {lat: 50.4397, lng: 30.63309},             // specify coordinates
                                 scrollwheel: false,
                                 mapTypeControl: false,
                                 panControl: false,
@@ -468,15 +434,9 @@
                         })();
 
                       </script>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-
-
-
-
 
 
           </div>
@@ -486,23 +446,18 @@
 
 
       <footer class="footer">
-        <a id="back-to-top" href="javascript:void(0);">
-          <div class="back-to-top"></div>
-        </a>
-        <div class="footer-line"></div>
-        <div class="footer-top">
-          <div class="wrap">
-            <span class="footer-quote-author">Steve Jobs</span>
-            <p class="footer-quote">Design is not just what it looks like and feels like.<br>Design is how it works.</p>
+        <div class="wrap">
+          <a id="back-to-top" class="back-to-top" href="#"></a>
+          <div class="footer-line"></div>
+          <div class="footer-top">
+              <span class="footer-quote-author">Steve Jobs</span>
+              <p class="footer-quote">Design is not just what it looks like and feels&nbsp;like. Design is how it works.</p>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="wrap">
-            © 2016 - Booster. All Rights Reserved
+          <div class="footer-bottom">
+              © 2016 - Booster. All Rights Reserved
           </div>
         </div>
       </footer>
-
 
 
     </div>
@@ -516,7 +471,6 @@
     <script src="js/typed.js"></script>
     <script src="js/headhesive.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
-    <script src="js/parallax.min.js"></script>
     <script src="js/nprogress.js"></script>
     <script src="js/script.js"></script>
 
